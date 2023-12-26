@@ -43,7 +43,7 @@
 var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/page-home/images/image.jpg
-const image_namespaceObject = __webpack_require__.p + "c7084de57bc9c636fe37.jpg";
+const image_namespaceObject = __webpack_require__.p + "dce22d0ed260cfe2e230.jpg";
 ;// CONCATENATED MODULE: ./src/page-home/main.js
 'use-strict'
 
