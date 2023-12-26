@@ -3,15 +3,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-      index: './src/index.js',
+      index: './src/page-home/main.js',
+      another: './src/page-another/main.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/index.html',
+            chunks: ['index'],
+            template: 'src/page-home/index.html',
         }),
         new HtmlWebpackPlugin({
             filename: 'another-page.html',
-            template: 'src/another-page.html',
+            chunks: ['another'],
+            template: 'src/page-another/another-page.html',
         }),
     ],
     output: {

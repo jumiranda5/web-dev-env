@@ -1,7 +1,8 @@
 'use-strict'
 
-import './style.css';
-import Image from './assets/images/image.jpg';
+import '../styles/style.css';
+import './styles/style.css';
+import Image from './images/image.jpg';
 
 const p = document.createElement('p');
 p.textContent = 'Hello from webpack!';
