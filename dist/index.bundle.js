@@ -43,11 +43,14 @@
 var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/page-home/images/image.jpg
-const image_namespaceObject = __webpack_require__.p + "dce22d0ed260cfe2e230.jpg";
+const image_namespaceObject = __webpack_require__.p + "86243fe9e83e29eb3dfb.jpg";
+;// CONCATENATED MODULE: ./src/page-home/images/halie-unsplash.jpg
+const halie_unsplash_namespaceObject = __webpack_require__.p + "6eb8fd3d09c2b91d7a44.jpg";
 ;// CONCATENATED MODULE: ./src/page-home/main.js
 'use-strict'
 
 ;
+
 
 
 
@@ -58,6 +61,10 @@ document.body.append(p);
 const myImage = document.createElement('img');
 myImage.src = image_namespaceObject;
 document.body.append(myImage);
+
+const myImage2 = document.createElement('img');
+myImage2.src = halie_unsplash_namespaceObject;
+document.body.append(myImage2);
 /******/ })()
 ;
 //# sourceMappingURL=index.bundle.js.map
