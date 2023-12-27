@@ -43,16 +43,16 @@
 var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/assets/images/image.jpg
-const image_namespaceObject = __webpack_require__.p + "images/image-c7084de57bc9c636fe37.jpg";
+const image_namespaceObject = __webpack_require__.p + "images/image-86243fe9e83e29eb3dfb.jpg";
 ;// CONCATENATED MODULE: ./src/assets/images/halie-unsplash.jpg
-const halie_unsplash_namespaceObject = __webpack_require__.p + "images/halie-unsplash-f226698381ab518a2ee5.jpg";
+const halie_unsplash_namespaceObject = __webpack_require__.p + "images/halie-unsplash-6eb8fd3d09c2b91d7a44.jpg";
 ;// CONCATENATED MODULE: ./src/page-home/main.js
 'use-strict'
 
 ;
 
 
-
+ // convert to webp
 
 const p = document.createElement('p');
 p.textContent = 'Hello from webpack!';
@@ -67,4 +67,4 @@ myImage2.src = halie_unsplash_namespaceObject;
 document.body.append(myImage2);
 /******/ })()
 ;
-//# sourceMappingURL=index.bundle-5455c802189f00754590.js.map
+//# sourceMappingURL=index.bundle-2acb45b3a1ae090ae5d9.js.map
