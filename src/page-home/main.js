@@ -2,8 +2,8 @@
 
 import '../styles/style.css';
 import './styles/style.css';
-import Image from './images/image.jpg';
-import Image2 from './images/halie-unsplash.jpg';
+import Image from '../assets/images/image.jpg';
+import Image2 from '../assets/images/halie-unsplash.jpg';
 
 const p = document.createElement('p');
 p.textContent = 'Hello from webpack!';

@@ -18,7 +18,7 @@ module.exports = {
         }),
     ],
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].bundle-[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
@@ -27,10 +27,16 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name]-[hash][ext]'
+                }
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name]-[hash][ext]'
+                }
             },
         ],
     },
