@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -16,6 +17,7 @@ module.exports = {
             chunks: ['another'],
             template: 'src/page-another/another-page.html',
         }),
+        new ESLintPlugin(),
     ],
     output: {
         filename: '[name].bundle-[contenthash].js',
@@ -38,6 +40,18 @@ module.exports = {
                     filename: 'fonts/[name]-[hash][ext]'
                 }
             },
+            {
+                test: /\.(?:js|mjs|cjs)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            ['@babel/preset-env', { targets: "defaults" }]
+                        ]
+                    }
+                }
+            }
         ],
     },
 };
