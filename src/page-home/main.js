@@ -1,7 +1,7 @@
 'use-strict';
 
-import '../styles/style.css';
-import './styles/style.css';
+import '../styles/style.scss';
+import './styles/style.scss';
 import Image from '../assets/images/image.jpg';
 import Image2 from '../assets/images/halie-unsplash.jpg';
 

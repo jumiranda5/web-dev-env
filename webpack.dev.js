@@ -10,8 +10,8 @@ module.exports = merge(common, {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                test: /\.(css|s[ac]ss)$/ui,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
         ],
     },
